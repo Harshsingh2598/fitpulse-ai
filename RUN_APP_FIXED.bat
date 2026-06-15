@@ -15,6 +15,6 @@ python -m pip install -r requirements.txt
 echo.
 echo Starting app on 127.0.0.1:8510 ...
 start "" "http://127.0.0.1:8510"
-python app.py
+python api/index.py
 
 pause

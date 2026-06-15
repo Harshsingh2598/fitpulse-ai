@@ -2,5 +2,5 @@
 echo Installing requirements...
 pip install -r requirements.txt
 echo Starting AI App...
-python -m streamlit run app.py
+python api/index.py
 pause
