@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitPulse AI - Premium Gym Trainer & Fitness Assistant</title>
+    <meta name="description" content="Get personalized workout routines, custom diet plans, and instant fitness advice from your AI Trainer.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ========== AMBIENT BACKGROUND ========== -->
+<div class="orb orb-1"></div>
+<div class="orb orb-2"></div>
+<div class="orb orb-3"></div>
+<div class="grid-overlay"></div>
+
+<!-- ========== LANDING PAGE ========== -->
+<div id="landing-page">
+
+    <!-- Nav bar -->
+    <nav class="landing-nav">
+        <div class="nav-brand">
+            <span class="nav-logo">⚡</span>
+            <span class="nav-title">FitPulse <span class="cyan">AI</span></span>
+        </div>
+        <button id="btn-enter-app" class="btn-glow">🚀 Enter App</button>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero-section">
+        <div class="hero-badge">⚡ OFFLINE GYM INTELLIGENCE — V2.0</div>
+        <h1 class="hero-title">
+            Upgrade Your Fitness With<br>
+            <span class="gradient-text">FitPulse AI</span>
+        </h1>
+        <p class="hero-sub">
+            An ultra-premium offline fitness assistant. Get personalized workout regimens,<br>
+            real-time diet planning, calorie burn predictions, and 1-on-1 AI Coach assistance.
+        </p>
+        <div class="hero-actions">
+            <button id="btn-enter-app-2" class="btn-glow btn-large">🚀 Enter Workspace</button>
+            <a href="#features" class="btn-outline btn-large">🏋️ Explore Features</a>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-pill">💪 7 AI Modules</div>
+            <div class="stat-pill">🔥 Real-time Calorie Calc</div>
+            <div class="stat-pill">🥗 Dynamic Diet Plans</div>
+            <div class="stat-pill">📊 Progress Charts</div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features-section" id="features">
+        <div class="section-label">WHAT'S INSIDE</div>
+        <h2 class="features-title">Everything You Need to Transform</h2>
+        <div class="features-grid">
+            <div class="feat-card">
+                <div class="feat-icon">🤖</div>
+                <h3>AI Fitness Coach</h3>
+                <p>Instant advice on chest, legs, diet, recovery, and fat loss — completely offline.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🔥</div>
+                <h3>Calorie Predictor</h3>
+                <p>Calculate workout burn based on weight, duration, and training intensity in real-time.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🥗</div>
+                <h3>Smart Diet Planner</h3>
+                <p>Auto-scaled meal plans with ingredient quantities based on your weight and goal.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">🏋️</div>
+                <h3>Workout Generator</h3>
+                <p>Full weekly routines for Muscle Gain, Fat Loss, Strength, or Beginner Fitness.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">📊</div>
+                <h3>Progress Tracker</h3>
+                <p>Visualize your weekly calorie burn and protein intake with beautiful charts.</p>
+            </div>
+            <div class="feat-card">
+                <div class="feat-icon">📄</div>
+                <h3>Weekly Reports</h3>
+                <p>Comprehensive AI-generated fitness reports that are printable and exportable.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Footer -->
+    <div class="landing-cta">
+        <button id="btn-enter-app-3" class="btn-glow btn-large">Get Started Now →</button>
+    </div>
+
+</div>
+
+<!-- ========== APP WORKSPACE ========== -->
+<div id="app-workspace" style="display:none;">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-brand">
+            <span class="sidebar-logo">💪</span>
+            <div class="sidebar-brand-text">
+                <div class="sidebar-name">FitPulse <span class="cyan">AI</span></div>
+                <div class="sidebar-tagline">Premium Trainer</div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <div class="nav-section-label">CORE SYSTEM MODULES</div>
+            <ul class="nav-list">
+                <div class="nav-indicator"></div>
+                <li class="nav-item active" data-target="dashboard">
+                    <a href="#"><span class="nav-icon">🚀</span><span class="nav-text">Nexus Console</span></a>
+                </li>
+                <li class="nav-item" data-target="coach">
+                    <a href="#"><span class="nav-icon">🤖</span><span class="nav-text">Neural RAG Chat</span></a>
+                </li>
+                <li class="nav-item" data-target="vocal">
+                    <a href="#"><span class="nav-icon">🎙️</span><span class="nav-text">Vocal Nexus AI</span></a>
+                </li>
+                <li class="nav-item" data-target="workout">
+                    <a href="#"><span class="nav-icon">🏋️</span><span class="nav-text">Synth Lab</span></a>
+                </li>
+                <li class="nav-item" data-target="diet">
+                    <a href="#"><span class="nav-icon">🥗</span><span class="nav-text">Diet Matrix</span></a>
+                </li>
+                <li class="nav-item" data-target="predictor">
+                    <a href="#"><span class="nav-icon">🔥</span><span class="nav-text">Predictor Engine</span></a>
+                </li>
+                <li class="nav-item" data-target="tracker">
+                    <a href="#"><span class="nav-icon">📊</span><span class="nav-text">Entropy Map</span></a>
+                </li>
+                <li class="nav-item" data-target="report">
+                    <a href="#"><span class="nav-icon">📄</span><span class="nav-text">Singularity Report</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-user">
+            <div class="user-avatar-ring">
+                <div class="user-avatar">H</div>
+            </div>
+            <div class="user-details">
+                <div class="user-name">Harsh Singh</div>
+                <div class="user-badge-text">⭐ Premium Member</div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- ── DASHBOARD ── -->
+        <section id="section-dashboard" class="page active">
+            <!-- Protocol Header Bar -->
+            <div class="protocol-bar">
+                <div class="protocol-left">
+                    <span>Protocol: <strong class="gradient-text">Singularity</strong></span>
+                    <span>RAG Stream: <strong class="cyan">4.2</strong></span>
+                </div>
+                <div class="protocol-right">
+                    <span>Auth: <strong class="pink">ADMIN_01</strong></span>
+                    <span class="status-badge"><span class="status-dot"></span> CORE NOMINAL</span>
+                </div>
+            </div>
+
+            <div class="page-header">
+                <div>
+                    <h1>Fitness Dashboard</h1>
+                    <p class="page-sub">Welcome back, Harsh! Here's your training telemetry for today.</p>
+                </div>
+                <button class="btn-glow btn-sm" onclick="switchTab('coach')">💬 Chat Coach</button>
+            </div>
+
+            <div class="metrics-row">
+                <div class="metric-card card-cyan">
+                    <div class="metric-top">
+                        <span class="metric-label">CALORIES TARGET</span>
+                        <span class="metric-tag">🎯 Daily</span>
+                    </div>
+                    <div class="metric-value" id="m-calories">2,350</div>
+                    <div class="metric-trend up">▲ 5% vs last week</div>
+                </div>
+                <div class="metric-card card-purple">
+                    <div class="metric-top">
+                        <span class="metric-label">WORKOUTS DONE</span>
+                        <span class="metric-tag">📅 Monthly</span>
+                    </div>
+                    <div class="metric-value" id="m-workouts">16</div>
+                    <div class="metric-trend up">▲ 2 sessions ahead</div>
+                </div>
+                <div class="metric-card card-pink">
+                    <div class="metric-top">
+                        <span class="metric-label">MUSCLE SCORE</span>
+                        <span class="metric-tag">⚡ AI Est.</span>
+                    </div>
+                    <div class="metric-value" id="m-muscle">88%</div>
+                    <div class="metric-trend up">▲ +1.2% growth</div>
+                </div>
+                <div class="metric-card card-lime">
+                    <div class="metric-top">
+                        <span class="metric-label">PROTEIN INTAKE</span>
+                        <span class="metric-tag">🍳 Avg Daily</span>
+                    </div>
+                    <div class="metric-value" id="m-protein">150g</div>
+                    <div class="metric-trend up">▲ Met standard</div>
+                </div>
+            </div>
+
+            <!-- Diagnostics Section -->
+            <div class="sec-label-left">SYSTEM NOMINAL</div>
+            <h2 class="section-title-neon">🔱 Singularity Neural Core Diagnostics</h2>
+            
+            <div class="three-col-diagnostics">
+                <!-- System Load Gauges -->
+                <div class="card card-gauges">
+                    <h3 class="card-title cyan">⚡ SYSTEM LOAD GAUGES</h3>
+                    <div class="gauges-grid">
+                        <div class="gauge-item">
+                            <svg class="progress-ring" width="60" height="60">
+                                <circle class="progress-ring-bg" cx="30" cy="30" r="24"></circle>
+                                <circle class="progress-ring-fill val-80" cx="30" cy="30" r="24"></circle>
+                            </svg>
+                            <span class="gauge-percent">80%</span>
+                            <span class="gauge-label">CPU LOAD</span>
+                        </div>
+                        <div class="gauge-item">
+                            <svg class="progress-ring" width="60" height="60">
+                                <circle class="progress-ring-bg" cx="30" cy="30" r="24"></circle>
+                                <circle class="progress-ring-fill val-44" cx="30" cy="30" r="24"></circle>
+                            </svg>
+                            <span class="gauge-percent">44%</span>
+                            <span class="gauge-label">GPU LOAD</span>
+                        </div>
+                        <div class="gauge-item">
+                            <svg class="progress-ring" width="60" height="60">
+                                <circle class="progress-ring-bg" cx="30" cy="30" r="24"></circle>
+                                <circle class="progress-ring-fill val-92" cx="30" cy="30" r="24"></circle>
+                            </svg>
+                            <span class="gauge-percent">92%</span>
+                            <span class="gauge-label">SYNAP MEM</span>
+                        </div>
+                        <div class="gauge-item">
+                            <svg class="progress-ring" width="60" height="60">
+                                <circle class="progress-ring-bg" cx="30" cy="30" r="24"></circle>
+                                <circle class="progress-ring-fill val-28" cx="30" cy="30" r="24"></circle>
+                            </svg>
+                            <span class="gauge-percent">28%</span>
+                            <span class="gauge-label">RCQL RATE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="linear-progress-group">
+                        <div class="lin-prog-row">
+                            <span>SYNAPTIC COHERENCE</span>
+                            <span class="cyan">93.2%</span>
+                        </div>
+                        <div class="lin-prog-bar"><div class="lin-prog-fill cyan-bg" style="width: 93.2%"></div></div>
+                        
+                        <div class="lin-prog-row">
+                            <span>TEMPORAL ALIGNMENT</span>
+                            <span class="lime">100%</span>
+                        </div>
+                        <div class="lin-prog-bar"><div class="lin-prog-fill lime-bg" style="width: 100%"></div></div>
+                    </div>
+                </div>
+                
+                <!-- Predictive Anomaly Log -->
+                <div class="card card-anomaly">
+                    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+                        <h3 class="card-title pink" style="margin:0;">⚠️ PREDICTIVE ANOMALY LOG</h3>
+                        <span class="status-badge badge-pulse">MONITORING</span>
+                    </div>
+                    <div class="terminal-log" id="dashboard-anomaly-log">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+                
+                <!-- Synaptic Flux Stream -->
+                <div class="card card-flux">
+                    <h3 class="card-title lime">💬 SYNAPTIC FLUX STREAM</h3>
+                    <div class="terminal-flux" id="dashboard-flux-stream">
+                        <!-- Filled by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <div class="card">
+                    <h2 class="card-title">🤖 Quick Coach Assistant</h2>
+                    <div class="chat-box">
+                        <div class="chat-messages" id="dash-chat-history"></div>
+                        <div class="chat-input-row">
+                            <input type="text" id="dash-chat-input" class="chat-input" placeholder="Ask: chest workout, diet plan, fat loss...">
+                            <button id="btn-dash-chat-send" class="btn-glow btn-sm">Send</button>
+                        </div>
+                    </div>
+                    <div class="chip-row">
+                        <button class="chip" onclick="quickQuery('chest workout')">🏋️ Chest</button>
+                        <button class="chip" onclick="quickQuery('diet plan')">🥗 Diet</button>
+                        <button class="chip" onclick="quickQuery('fat loss tips')">🔥 Fat Loss</button>
+                        <button class="chip" onclick="quickQuery('recovery tips')">🛌 Recovery</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">🔥 Training Streak</h3>
+                    <p class="text-muted small">You've trained 5 out of the last 7 days. Consistency is key!</p>
+                    <div class="streak-row">
+                        <div class="streak-day active"><span>🔥</span><p>M</p></div>
+                        <div class="streak-day active"><span>🔥</span><p>T</p></div>
+                        <div class="streak-day rest"><span>💤</span><p>W</p></div>
+                        <div class="streak-day active"><span>🔥</span><p>T</p></div>
+                        <div class="streak-day active"><span>🔥</span><p>F</p></div>
+                        <div class="streak-day active"><span>🔥</span><p>S</p></div>
+                        <div class="streak-day rest"><span>💤</span><p>S</p></div>
+                    </div>
+                    <div class="tip-box">
+                        <div class="tip-label">💡 Coach Tip</div>
+                        <p class="small text-muted">"Consume 20–30g protein within 2 hours post-workout to maximize muscle recovery and protein synthesis."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── AI COACH ── -->
+        <section id="section-coach" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🤖 Neural RAG Chat Console</h1>
+                    <p class="page-sub">Direct access to the Singularity Core RAG search and fitness intelligence database.</p>
+                </div>
+                <button class="btn-outline btn-sm" id="btn-clear-chat-dedicated">🧹 Clear Chat</button>
+            </div>
+            
+            <div class="two-col-rag">
+                <div class="card chat-main-wrapper">
+                    <div class="chat-box" style="height:460px;">
+                        <div class="chat-messages" id="dedicated-chat-history"></div>
+                        <div class="chat-input-row">
+                            <input type="text" id="dedicated-chat-input" class="chat-input" placeholder="Type a fitness question...">
+                            <button id="btn-dedicated-chat-send" class="btn-glow btn-sm">🚀 Send</button>
+                        </div>
+                    </div>
+                    
+                    <div id="rag-processing-bar" class="rag-bar hidden-section">
+                        <span class="rag-bar-text">••• RAG PROCESSING: MATCHING KNOWLEDGE CLUSTERS</span>
+                        <div class="scanning-shimmer"></div>
+                    </div>
+                    
+                    <div class="chip-row" style="margin-top:12px;">
+                        <button class="chip" onclick="quickQueryDedicated('back workout')">💪 Back</button>
+                        <button class="chip" onclick="quickQueryDedicated('leg workout')">🦵 Legs</button>
+                        <button class="chip" onclick="quickQueryDedicated('shoulder workout')">🔥 Shoulders</button>
+                        <button class="chip" onclick="quickQueryDedicated('beginner plan')">✅ Beginner</button>
+                        <button class="chip" onclick="quickQueryDedicated('recovery tips')">🛌 Recovery</button>
+                    </div>
+                </div>
+                
+                <div class="rag-sidebar-wrapper">
+                    <!-- Knowledge Fragments -->
+                    <div class="card card-fragments" style="margin-bottom:16px;">
+                        <h3 class="card-title pink">📚 KNOWLEDGE FRAGMENTS</h3>
+                        <div class="fragment-list" id="rag-fragments-list">
+                            <div class="notif-fragment cyan-border">
+                                <div class="frag-head">
+                                    <span class="frag-name">FRAGMENT_7B</span>
+                                    <span class="frag-match lime">98.2% MATCH</span>
+                                </div>
+                                <div class="frag-desc">Hypertrophy and protein synthesis correlation database.</div>
+                            </div>
+                            <div class="notif-fragment purple-border">
+                                <div class="frag-head">
+                                    <span class="frag-name">DELTA_SIGNAL</span>
+                                    <span class="frag-match cyan">45.0% MATCH</span>
+                                </div>
+                                <div class="frag-desc">Electrolyte balance data telemetry from active metabolic sensors.</div>
+                            </div>
+                            <div class="notif-fragment orange-border">
+                                <div class="frag-head">
+                                    <span class="frag-name">OMEGA_REF</span>
+                                    <span class="frag-match orange">22.1% MATCH</span>
+                                </div>
+                                <div class="frag-desc">Anaerobic conditioning indices & EPOC thresholds.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Node Topology -->
+                    <div class="card card-topology">
+                        <h3 class="card-title cyan">🕸 NEURAL NODE TOPOLOGY</h3>
+                        <div class="canvas-wrapper" style="text-align: center;">
+                            <canvas id="canvas-topology" width="220" height="150" style="background: rgba(3,7,18,0.4); border-radius:10px;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── VOCAL NEXUS (VOICE AI) ── -->
+        <section id="section-vocal" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🎙️ Vocal Nexus AI Assistant</h1>
+                    <p class="page-sub">Real-time biometric voice synchronization core. Standby for vocal input.</p>
+                </div>
+            </div>
+            
+            <div class="vocal-layout">
+                <!-- Center column with audio orb and transcription -->
+                <div class="vocal-center-panel">
+                    <!-- Latency indicator -->
+                    <div class="latency-indicator-panel">
+                        <span class="label">NEURAL_LATENCY</span>
+                        <span class="val cyan" id="vocal-latency-val">0.04 MS</span>
+                    </div>
+                    
+                    <!-- Pulse circular visualizer ring -->
+                    <div class="vocal-ring-container">
+                        <canvas id="canvas-vocal-orb" width="350" height="350"></canvas>
+                        <div class="vocal-mic-btn" id="btn-vocal-mic-trigger">
+                            <span class="mic-icon">🎙️</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Uplink buffer message -->
+                    <div class="card uplink-panel">
+                        <div class="uplink-title">UPLINK_BUFFER_LIVE // NEXUS_V5_CORE</div>
+                        <div class="uplink-text" id="vocal-transcription-output">
+                            Neural link established. Awaiting vocal command sequence...
+                        </div>
+                    </div>
+
+                    <!-- Keyboard Override Text Input -->
+                    <div class="vocal-text-input-row" style="margin-top: 20px; display: flex; gap: 10px; width: 100%;">
+                        <input type="text" id="vocal-text-input" class="chat-input" placeholder="Type a fitness or diet question..." style="flex: 1;">
+                        <button id="btn-vocal-text-send" class="btn-glow btn-sm">💬 Send</button>
+                    </div>
+
+                    <!-- Vocal Suggestion Chips -->
+                    <div class="chip-row vocal-chips-row" style="margin-top: 15px; justify-content: center; gap: 8px;">
+                        <button class="chip vocal-chip" data-query="chest workout">🏋️ Chest</button>
+                        <button class="chip vocal-chip" data-query="diet plan">🥗 Diet Plan</button>
+                        <button class="chip vocal-chip" data-query="fat loss tips">🔥 Fat Loss</button>
+                        <button class="chip vocal-chip" data-query="banana before workout">🍌 Banana Info</button>
+                        <button class="chip vocal-chip" data-query="recovery tips">🛌 Recovery</button>
+                    </div>
+                </div>
+                
+                <!-- Side panels (anomaly log & synaptic flux stream) -->
+                <div class="vocal-side-panel">
+                    <!-- Synaptic Flux Stream -->
+                    <div class="card vocal-flux-card">
+                        <h3 class="card-title cyan">💬 SYNAPTIC_FLUX_STREAM</h3>
+                        <div class="terminal-flux" id="vocal-flux-stream">
+                            <!-- Hex listing populated by JS -->
+                        </div>
+                    </div>
+                    
+                    <!-- Logic Transcription log -->
+                    <div class="card vocal-logic-card">
+                        <h3 class="card-title purple">📝 LOGIC_TRANSCRIPTION</h3>
+                        <div class="terminal-log" id="vocal-logic-log">
+                            <div style="color: #a855f7;">[SYS] STANDBY_FOR_INPUT...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── WORKOUT ── -->
+        <section id="section-workout" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🏋️ Workout AI Planner</h1>
+                    <p class="page-sub">Generate structured, targeted training routines compiled by AI logic.</p>
+                </div>
+            </div>
+            <div class="two-col">
+                <div class="card">
+                    <h3 class="card-title">Workout Inputs</h3>
+                    <div class="form-group">
+                        <label class="form-label">Primary Fitness Goal</label>
+                        <select id="workout-goal" class="form-select">
+                            <option value="Muscle Gain">💪 Muscle Gain (Hypertrophy)</option>
+                            <option value="Fat Loss">🔥 Fat Loss & Conditioning</option>
+                            <option value="Strength">🏋️ Powerlifting & Strength</option>
+                            <option value="Beginner Fitness">✅ Beginner Fitness / Fundamentals</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Experience Level</label>
+                        <select id="workout-level" class="form-select">
+                            <option value="Beginner">Beginner (0–6 months)</option>
+                            <option value="Intermediate" selected>Intermediate (6–24 months)</option>
+                            <option value="Advanced">Advanced (2+ years)</option>
+                        </select>
+                    </div>
+                    <button id="btn-generate-workout" class="btn-glow" style="width:100%;margin-top:8px;">⚡ Generate Routine</button>
+                </div>
+                <div class="card flex-col">
+                    <h3 class="card-title">Active Status</h3>
+                    <p class="text-muted small" style="margin-top:8px;">Generate your routine plan, then export it directly for printing or logging.</p>
+                    <div style="margin-top:auto;">
+                        <button class="btn-outline" style="width:100%;" onclick="window.print()">🖨️ Export as PDF</button>
+                    </div>
+                </div>
+            </div>
+            <div id="workout-output" class="hidden-section">
+                <div class="card" style="margin-top:24px;">
+                    <h2 class="card-title cyan" id="workout-title">Muscle Gain Routine — Intermediate</h2>
+                    <div class="plan-grid" id="routine-days-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── DIET PLANNER ── -->
+        <section id="section-diet" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🥗 Diet Planner & Macro Tracker</h1>
+                    <p class="page-sub">Calculate caloric needs, protein ratios, and establish daily meal targets.</p>
+                </div>
+            </div>
+            <div class="two-col">
+                <div class="card">
+                    <h3 class="card-title">Personal Specifications</h3>
+                    <div class="form-group">
+                        <label class="form-label">Your Weight (kg)</label>
+                        <div class="slider-row">
+                            <input type="range" id="diet-weight" class="slider" min="40" max="150" value="72">
+                            <span class="slider-val cyan" id="diet-weight-val">72 kg</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Nutrition Goal</label>
+                        <select id="diet-goal" class="form-select">
+                            <option value="Muscle Gain">💪 Muscle Gain (Caloric Surplus)</option>
+                            <option value="Fat Loss">🔥 Fat Loss (Caloric Deficit)</option>
+                            <option value="Maintenance">⚖️ Maintenance (Energy Equilibrium)</option>
+                        </select>
+                    </div>
+                    <button id="btn-calculate-diet" class="btn-glow" style="width:100%;margin-top:8px;">🥗 Compute Diet Plan</button>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Daily Macro Split</h3>
+                    <div class="macro-row">
+                        <span class="text-muted">Total Calories:</span>
+                        <span class="macro-val cyan" id="diet-display-calories">2,400 kcal</span>
+                    </div>
+                    <div class="macro-row">
+                        <span class="text-muted">Protein Target:</span>
+                        <span class="macro-val lime" id="diet-display-protein">130g</span>
+                    </div>
+                    <div class="macro-row">
+                        <span class="text-muted">Carbs Estimate:</span>
+                        <span class="macro-val pink" id="diet-display-carbs">280g</span>
+                    </div>
+                    <div class="macro-row">
+                        <span class="text-muted">Fats Estimate:</span>
+                        <span class="macro-val purple" id="diet-display-fats">70g</span>
+                    </div>
+                    <p class="small text-muted" style="margin-top:16px;">*Protein: 1.8g/kg. Macros dynamically scaled to your weight and goal.</p>
+                </div>
+            </div>
+            <div id="diet-output" class="hidden-section">
+                <div class="card" style="margin-top:24px;">
+                    <h2 class="card-title pink">Daily Meal Recommendations</h2>
+                    <div class="plan-grid" id="diet-meals-container"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── CALORIE PREDICTOR ── -->
+        <section id="section-predictor" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>🔥 Calorie Burn Predictor</h1>
+                    <p class="page-sub">Calculate metabolic energy expenditure based on personal metrics and exercise intensity.</p>
+                </div>
+            </div>
+            <div class="two-col">
+                <div class="card">
+                    <h3 class="card-title">Workout Attributes</h3>
+                    <div class="form-group">
+                        <label class="form-label">Body Weight (kg)</label>
+                        <div class="slider-row">
+                            <input type="range" id="predictor-weight" class="slider" min="40" max="150" value="72">
+                            <span class="slider-val cyan" id="predictor-weight-val">72 kg</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Workout Duration (minutes)</label>
+                        <div class="slider-row">
+                            <input type="range" id="predictor-duration" class="slider" min="10" max="180" value="45">
+                            <span class="slider-val cyan" id="predictor-duration-val">45 min</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Intensity Level</label>
+                        <select id="predictor-intensity" class="form-select">
+                            <option value="Low">Low (Yoga, Slow Walk, Stretching)</option>
+                            <option value="Medium" selected>Medium (Strength Training, Cardio)</option>
+                            <option value="High">High (HIIT, Heavy Squats/Deadlifts)</option>
+                        </select>
+                    </div>
+                    <button id="btn-predict-calories" class="btn-glow" style="width:100%;margin-top:8px;">🔥 Predict Energy Burn</button>
+                </div>
+
+                <div class="card predict-card" id="predict-card">
+                    <div class="predict-label">Estimated Burn</div>
+                    <div class="predict-value" id="cal-prediction-value">--</div>
+                    <div class="predict-unit">kcal</div>
+                    <p class="text-muted small" id="cal-prediction-message" style="margin-top:16px;text-align:center;">Adjust inputs and press predict to calculate energy burn.</p>
+                    <div class="predict-rings">
+                        <div class="ring ring-1"></div>
+                        <div class="ring ring-2"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── PROGRESS TRACKER ── -->
+        <section id="section-tracker" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>📊 Progress Tracker</h1>
+                    <p class="page-sub">Analyze your weekly calorie burn and protein intake trends.</p>
+                </div>
+            </div>
+            <div class="two-col-tracker">
+                <div class="card">
+                    <h3 class="card-title cyan">Weekly Overview</h3>
+                    <div class="charts-grid">
+                        <div class="chart-box">
+                            <canvas id="chart-calories"></canvas>
+                        </div>
+                        <div class="chart-box">
+                            <canvas id="chart-protein"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-heatmap-wrapper">
+                    <h3 class="card-title pink">🔥 SYNAPTIC DENSITY HEATMAP</h3>
+                    <p class="text-muted small" style="margin-bottom:12px;">Real-time metabolic concentration index across global training node sets.</p>
+                    <div class="heatmap-container" style="text-align: center;">
+                        <canvas id="canvas-heatmap" width="280" height="250" style="background: rgba(3,7,18,0.45); border-radius: 12px; border: 1px solid var(--border);"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ── REPORT ── -->
+        <section id="section-report" class="page">
+            <div class="page-header">
+                <div>
+                    <h1>📄 Weekly Fitness Report</h1>
+                    <p class="page-sub">Comprehensive AI-generated fitness report — perfect for review and export.</p>
+                </div>
+                <button class="btn-glow btn-sm" onclick="window.print()">🖨️ Print Report</button>
+            </div>
+            <div class="card report-card">
+                <div class="report-header">
+                    <div>
+                        <h2 class="cyan" style="font-size:26px;">FitPulse Report</h2>
+                        <p class="small text-muted" style="margin-top:4px;">User: Harsh Singh | Gym Assistant Premium</p>
+                    </div>
+                    <div style="text-align:right;">
+                        <div style="font-weight:700;font-size:12px;letter-spacing:.1em;">DATE GENERATED</div>
+                        <div class="pink" id="report-date-display" style="font-size:15px;font-weight:700;"></div>
+                    </div>
+                </div>
+                <h3 style="margin-bottom:14px;margin-top:24px;">Summary Statistics</h3>
+                <table class="report-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Current</th>
+                            <th>Goal</th>
+                            <th>Completion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Workouts Executed</td><td>16 Sessions</td><td>18 Sessions</td><td class="lime">88.8%</td></tr>
+                        <tr><td>Calories Burned</td><td>12,450 kcal</td><td>12,000 kcal</td><td class="lime">103.7% ✅</td></tr>
+                        <tr><td>Avg Daily Protein</td><td>135g / day</td><td>130g / day</td><td class="lime">103.8% ✅</td></tr>
+                    </tbody>
+                </table>
+                <h3 style="margin-top:24px;margin-bottom:10px;">AI Performance Analysis</h3>
+                <p class="text-muted" style="line-height:1.7;">
+                    Harsh, your training consistency remains strong. Your weekly calorie burn targets were fully exceeded, driven by higher workout intensities on Tuesday and Sunday. Protein targets were met consistently, facilitating excellent muscle recovery.
+                </p>
+                <p class="text-muted" style="margin-top:12px;line-height:1.7;">
+                    <strong class="cyan">Recommendations:</strong> Ensure your leg days contain progressive overloading (e.g. increase weights by 2.5kg on squats). Continue monitoring sleep quality, as your recovery tips indicate soreness on mid-week cycles.
+                </p>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<!-- INIT NEXUS OVERLAY MODAL -->
+<div class="nexus-modal-overlay" id="vocal-nexus-modal">
+    <div class="nexus-modal-card">
+        <div class="modal-logo">🎙️</div>
+        <div class="modal-title">INIT_NEXUS</div>
+        <p class="modal-desc">Authorize vocal neural link synchronization with Singularity Core.</p>
+        <div style="display:flex; gap:12px; justify-content:center; margin-top:20px;">
+            <button class="btn-glow" id="btn-modal-init-confirm">🎙️ INIT_NEXUS</button>
+            <button class="btn-outline btn-close-modal" id="btn-modal-init-close">❌</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

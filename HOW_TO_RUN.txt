@@ -1,0 +1,6 @@
+1. Extract this ZIP file.
+2. Open extracted folder.
+3. Right click inside folder -> Open in Terminal.
+4. Run: python -m streamlit run app.py
+
+OR simply double click RUN_APP.bat
